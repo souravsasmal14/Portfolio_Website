@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sourav Sasmal | Portfolio</title>
+  <meta content="Portfolio" name="description">
+  <meta content="My Work and Education Experience" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="Assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="Assets/img/favicon/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- JS CSS  -->
+  <link rel="stylesheet" href="Assets/js/aos/aos.css">
+  <link rel="stylesheet" href="Assets/js/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Assets/js/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="Assets/js/boxicons/css/boxicons.min.css">
+  <link rel="stylesheet" href="Assets/js/glightbox/css/glightbox.min.css">
+  <link rel="stylesheet" href="Assets/js/remixicon/remixicon.css">
+
+  <!-- CSS Main-->
+  <link rel="stylesheet" href="Assets/css/style.css">
+   
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link async rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link async rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <script src="https://kit.fontawesome.com/4bf48f78b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <!-- Header -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
+          <li><a class="nav-link scrollto" href="#experience">Experience</a></li>
+          <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
+          <li><a class="nav-link scrollto" href="#blogs">Blogs</a></li>
+          <li><a class="nav-link scrollto" href="#contacts">Contacts</a></li>
+          <li><a class="uil uil-moon change-theme" id="theme-button"></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Home -->
+  <section id="hero">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+          <div class="Container" data-aos="zoom-out">
+            <h1>Hey there! </h1>
+            <h2>I'm <span class="gradient">Sourav Sasmal </span></h2>
+            <h3 class="wrapper">
+              <ul class="dynamic-txt">
+                <li><span>DevOps Engineer</span></li>
+                <li><span>Cloud Engineer</span></li>
+                <li><span>Software Engineer</span></li>
+                <li><span>Photographer</span></li>
+              </ul>  
+            </h3>
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <img src="Assets/img/hero1.svg" class="img-fluid animated" alt="hero">
+        </div>
+      </div>
+    </div>
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+  </section>
+  
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="section-title"data-aos="fade-up" >
+      <h2>About</h2>
+      <span>My introduction</span>
+    </div>
+    <div class="about_container container grid">
+      <div>
+        <img src="Assets/img/Photo.png" class="about_img" alt="Image" data-aos="zoom-in"/>
+        <button class="Resume" onclick="openCV()">DOWNLOAD CV</button>
+      </div>
+      <div class="about_data">
+        <h4>DevOps & Cloud <span>Engineer</span></h4>
+        <p class="about_description">
+          DevOps Engineer with a strong passion for streamlining software development processes and enhancing operational efficiency. With a solid foundation in both software development and system administration, I bring a unique blend of technical expertise and business acumen to the table. <br>My experience includes designing and implementing robust CI/CD pipelines, automating infrastructure deployment and configuration, and optimizing application performance and scalability.
+        </p>
+        <div class="about_button">
+          <a href="#contacts" class="button button--flex">
+            <button type="button">Let's Talk</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="section-title">
+      <h2>Skills</h2>
+      <span>
+        My Technical Skills
+      </span>
+    </div>
+    <div class="skills_container Container grid">
+      <!-- Skill Set 1 -->
+      <div class="skill skills_content skills_open">
+        <div class="skills_header">
+          <i class="uil uil-wrench skills_icon"></i>
+          <div>
+            <h1 class="skills_title">Tools</h1>
+            <span class="skills_subtitle">
+              Tools that I know and use on a daily basis
+            </span>
+          </div>
+          <i class="uil uil-angle-down skills_arrow"></i>
+        </div>
+        <div class="skills_list grid">
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Aws.svg" alt="Aws-logo">
+              </span>
+              <h3 class="skills_name">Aws</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Google-Cloud.svg" alt="Google-Cloud logo">
+              </span>
+              <h3 class="skills_name">Google Cloud</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Git.svg" alt="Git logo">
+              </span>
+              <h3 class="skills_name">Git</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Github.svg" alt="Github logo">
+              </span>
+              <h3 class="skills_name">Github</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Jenkins.svg" alt="Jenkins logo">
+              </span>
+              <h3 class="skills_name">Jenkins</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Terraform.svg" alt="Terraform logo">
+              </span>
+              <h3 class="skills_name">Terraform</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Ansible.svg" alt="Ansible logo">
+              </span>
+              <h3 class="skills_name">Ansible</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Docker.svg" alt="Docker logo">
+              </span>
+              <h3 class="skills_name">Docker</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Kubernetes.svg" alt="Kubernetes logo">
+              </span>
+              <h3 class="skills_name">Kubernetes</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Nginx.svg" alt="Nginx logo">
+              </span>
+              <h3 class="skills_name">Nginx</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Maven.png" alt="Maven logo">
+              </span>
+              <h3 class="skills_name">Maven</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Linux.png" alt="Linux logo">
+              </span>
+              <h3 class="skills_name">Linux</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Ubuntu.png" alt="Ubuntu logo">
+              </span>
+              <h3 class="skills_name">Ubuntu</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Tools/Tableau.svg" alt="Tableau logo">
+              </span>
+              <h3 class="skills_name">Tableau</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Set 2 -->
+      <div class="skill skills_content">
+        <div class="skills_header">
+          <i class="uil uil-brackets-curly skills_icon"></i>
+          <div>
+            <h1 class="skills_title">Languages</h1>
+            <span class="skills_subtitle">
+              Languages that I have picked up over the years
+            </span>
+          </div>
+          <i class="uil uil-angle-down skills_arrow"></i>
+        </div>
+        <div class="skills_list grid">
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Languages/Java.svg" alt="Java icon">
+              </span>
+              <h3 class="skills_name">Java</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Languages/Python.svg" alt="Python icon">
+              </span>
+              <h3 class="skills_name">Python</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Languages/C.svg" alt="C icon">
+              </span>
+              <h3 class="skills_name">C</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Languages/Javascript.svg" alt="JavaScript icon">
+              </span>
+              <h3 class="skills_name">JavaScript</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Set 3 -->
+      <div class="skill skills_content">
+        <div class="skills_header">
+          <i class="uil uil-arrow skills_icon"></i>
+          <div>
+            <h1 class="skills_title">Libraries & Frameworks</h1>
+            <span class="skills_subtitle">
+              Libraries and Frameworks that I prefer to work with
+            </span>
+          </div>
+          <i class="uil uil-angle-down skills_arrow"></i>
+        </div>
+        <div class="skills_list grid">
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Libraries & Frameworks/Django.svg" alt="Django logo">
+              </span>
+              <h3 class="skills_name">Django</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Libraries & Frameworks/Html.svg" alt="Html logo">
+              </span>
+              <h3 class="skills_name">Html</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <span class="single_skill_icon external-logo">
+                <img src="Assets/img/Libraries & Frameworks/css.svg" alt="CSS logo">
+              </span>
+              <h3 class="skills_name">CSS</h3>
+            </div>
+            <div class="skills_bar"></div>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience section" id="experience">
+    <div class="section-title">
+      <h2>Experience</h2>
+      <span>My Work Experience</span>
+    </div>
+    <div class="qualification_container Container">
+      <div class="qualification_tabs">
+        <div
+          class="qualification_button button-flex" id="educationheader">
+          <i class="uil uil-briefcase-alt qualification_icon"></i>Work
+        </div>
+        <div class="qualification_button button-flex" id="workheader">
+          <i class="uil uil-graduation-cap qualification_icon"></i>Education
+        </div>
+        <div class="qualification_button button-flex" id="volunteeringheader">
+          <i class="uil uil-user qualification_icon"></i>Volunteering
+        </div>
+      </div>
+  
+      <div class="qualification_sections">
+        <!-- Work Experience -->
+        <div class="qualification_content qualification_active" data-content id="education">
+          <div class="qualification_data">
+            <div>
+              <h3 class="qualification_title">Aws Cloud Intern</h3>
+              <span class="qualification_subtitle"><a href="https://aicte-internship.eduskillsfoundation.org/pages/home/" target="_blank"
+                rel="noopener noreferrer">AICTE-EduSkills</a></span>
+              <div class="qualification_calendar">
+                <i class="uil uil-calendar-alt"></i>
+                May 2023 — July 2023
+              </div>
+            </div>
+            <div>
+              <span class="qualification_circle"></span>
+              <span class="qualification_line"></span>
+            </div>
+          </div> 
+
+          <div class="qualification_data">
+            <div></div>
+            <div>
+              <span class="qualification_circle"></span>
+              <span class="qualification_line"></span>
+            </div>
+            <div>
+              <h3 class="qualification_title">Testing</h3>
+              <span class="qualification_subtitle"><a href="https://phntechnology.com/" target="_blank"
+                rel="noopener noreferrer">PHN Technology Pvt Ltd, Pune</a></span>
+              <div class="qualification_calendar">
+                <i class="uil uil-calendar-alt"></i>
+                April 2023 — June 2023
+              </div>
+            </div>
+          </div>
+
+          <div class="qualification_data">
+            <div>
+              <h3 class="qualification_title">Google Cloud</h3>
+              <span class="qualification_subtitle"><a href="https://googlecloud/" target="_blank"
+                  rel="noopener noreferrer">Career Readiness Program</a></span>
+              <div class="qualification_calendar">
+                <i class="uil uil-calendar-alt"></i>
+                April 2022 — September 2022
+              </div>
+            </div>
+            <div>
+              <span class="qualification_circle"></span>
+            </div>
+          </div>          
+        </div>
+
+        <!-- Educational Qualification -->
+        <div class="qualification_content qualification-inactive" data-content id="work">
+          <div class="qualification_data">
+            <div>
+              <h3 class="qualification_title">Bachelor of Technology in Computer Science and Technology (BTech CST)</h3>
+              <span class="qualification_subtitle"><a href="https://uem.edu.in/uem-kolkata/" target="_blank"
+                  rel="noopener noreferrer">University of Engineering & Management, Kolkata</a></span>
+              <div class="qualification_calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2020 July - 2024 July
+              </div>
+            </div>
+            <div>
+              <span class="qualification_circle"></span>
+              <span class="qualification_line"></span>
+            </div>
+          </div>
+
+          <div class="qualification_data">
+            <div></div>
+            <div>
+              <span class="qualification_circle"></span>
+              <span class="qualification_line"></span>
+            </div>
+            <div data-aos="fade-up">
+              <h3 class="qualification_title">Higher Secondary Education</h3>
+              <span class="qualification_subtitle"><a href="https://schools.org.in/purba-medinipur/19190302301/jasra-charubala-high-school.html" target="_blank"
+                  rel="noopener noreferrer">Jasra Charubala High School, Jasora</a></span> 
+              <div class="qualification_calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2018 April - 2020 May
+              </div>
+            </div>
+          </div>
+
+          <div class="qualification_data">
+            <div>
+              <h3 class="qualification_title">Secondary Education</h3>
+              <span class="qualification_subtitle"><a href="https://schools.org.in/purba-medinipur/19190302301/jasra-charubala-high-school.html" target="_blank"
+                  rel="noopener noreferrer">Jasra Charubala High School, Jasora</a></span>
+              <div class="qualification_calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2012 January - 2018 April
+              </div>
+            </div>
+            <div>
+              <span class="qualification_circle" data-aos="zoom-in"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Volunteering Experience -->
+        <div class="qualification_content qualification_inactive" data-content id="volunteering">
+          <div class="qualification_data">
+            <div>
+              <h3 class="qualification_title">Member</h3>
+              <span class="qualification_subtitle">
+                Github Dev Program
+              </span>
+              <div class="qualification_calendar">
+                <i class="uil uil-calendar-alt"></i>
+                Jan 2023 - Present
+              </div>
+            </div>
+            <div>
+              <span class="qualification_circle" data-aos="zoom-in"></span>
+              <span class="qualification_line"></span>
+            </div>
+          </div>
+
+          <div class="qualification_data">
+            <div></div>
+            <div>
+              <span class="qualification_circle" data-aos="zoom-in"></span>
+              <span class="qualification_line"></span>
+            </div>
+            <div>
+              <h3 class="qualification_title">Community Member</h3>
+              <span class="qualification_subtitle">
+                Google Developer Club
+              </span>
+              <div class="qualification_calendar">
+                <i class="uil uil-calendar-alt"></i>
+                Sep 2022 - Present
+              </div>
+            </div>
+          </div>
+  
+          <div class="qualification_data">
+            <div>
+              <h3 class="qualification_title">Student Volunteer</h3>
+              <span class="qualification_subtitle">
+                University of Engineering & Management, Kolkata
+              </span>
+              <div class="qualification_calendar">
+                <i class="uil uil-calendar-alt"></i>
+                Jan 2022 - Jan 2023
+              </div>
+            </div>
+            <div>
+              <span class="qualification_circle" data-aos="zoom-in"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="section-title">
+      <h2>Projects</h2>
+      <span>Some of My Projects</span>
+    </div>
+    <div class="Contain">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="img-wrapper">
+            <div class="text-top">
+              <p>2023</p>
+            </div>
+            <img src="Assets/img/Project/Project1.png" alt="Project1" height="210px">
+            <div class="text-bottom">
+              <h5>Spring Boot based Java web application using Maven, SonarQube, Argo CD and Kubernetes.</h5>
+            </div>
+            <div class="overlay">
+              <div class="overlay-infos">
+                <h5>Spring Boot based Java web application using Maven, SonarQube, Argo CD and Kubernetes.</h5>
+                <h3>This project incorporated Maven for streamlined build management, SonarQube for code quality analysis, and Argo CD for continuous delivery and deployment. Kubernetes was utilized to orchestrate containerized services, ensuring scalability and reliability. This initiative showcased my expertise in Java development, DevOps, and containerization, contributing to the successful deployment of a robust web application.</h3>
+              </div> 
+              <a href="https://github.com/souravsasmal01/Spring_Boot_based_Java_web_application_using_Maven_SonarQube_Argo_CD_and_Kubernetes" target="_blank" class="button">
+                <button type="button" class="button--view">View
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="img-wrapper">
+            <img src="Assets/img/Project/Project2.png" alt="Project2" height="300px">
+            
+            <div class="text-bottom">
+              <h5>Career Guidence</h5>
+            </div>
+            <div class="overlay">
+                <div class="overlay-infos">
+                    <h5>Career Guidence</h5>
+                    <h3>I designed and developed an engaging Career Guidance website using HTML and CSS, providing valuable resources and insights for individuals navigating their professional paths. This project highlighted my proficiency in front-end web development, showcasing my ability to create visually appealing and user-friendly interfaces. By crafting a responsive and informative platform, I contributed to helping users make informed career decisions, demonstrating my skills in HTML and CSS.</h3>
+                </div>  
+                <a href="#contacts" class="button">
+                  <button type="button" class="button--view">View
+                    <i class="uil uil-arrow-right button_icon"></i>
+                  </button>
+                </a>                            
+            </div>
+          </div>                  
+        </div>
+        <div class="col-sm-4">
+          <div class="img-wrapper">
+            <div class="text-top">
+              <p>2023</p>
+            </div>
+            <img src="Assets/img/Project/Project3.jpg" alt="Project3" height="230px">
+            <div class="text-bottom">
+              <h5>Java Web Application into Kubernetes Cluster using Ansible.</h5>
+            </div>
+            <div class="overlay">
+              <div class="overlay-infos">
+                <h5>Java Web Application into Kubernetes Cluster using Ansible.</h5>
+                <h3>I orchestrated the seamless deployment of a Java web application into a Kubernetes cluster using Ansible automation. This project demonstrated my proficiency in managing infrastructure as code, enabling efficient and reproducible deployments. By leveraging Ansible's capabilities, I ensured a streamlined and error-free process, contributing to the project's success and demonstrating my expertise in DevOps and Kubernetes orchestration.</h3>
+              </div>
+              <a href="https://github.com/souravsasmal01/Java_Web_Application_into_Kubernetes_Cluster_using_Ansible" class="button" target="_blank">
+                <button type="button" class="button--view">View
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </button>
+              </a>  
+            </div>
+          </div>
+          <div class="img-wrapper">
+            <img src="Assets/img/Project/Project4.png" alt="Project4" height="300px">
+            <div class="text-bottom">
+              <h5>Voice Assistant</h5>
+            </div>
+            <div class="overlay">
+              <div class="overlay-infos">
+                <h5>Voice Assistant</h5>
+                <h3>Voice Assistance application using Python, seamlessly integrated with Google Workspace API. This project showcased my expertise in voice recognition and automation. By harnessing the power of Google Workspace API, I enabled users to perform a wide range of tasks through voice commands, enhancing productivity and convenience. This project underscored my skills in Python programming and API integration, offering a cutting-edge solution for voice-controlled interactions within the Google Workspace ecosystem.</h3>
+              </div>   
+              <a href="#contacts" class="button">
+                <button type="button" class="button--view">View
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </button>
+              </a>                           
+            </div>
+          </div>                  
+        </div>
+        <div class="col-sm-4">
+          <div class="img-wrapper">
+            <div class="text-top">
+              <p>2023</p>
+            </div>
+            <img src="Assets/img/Project/Project5.jpg" alt="" height="230px">
+            <div class="text-bottom">
+              <h5>Jenkins CICD Pipeline for Deploying an Application to EKS Cluster.</h5>
+            </div>
+            <div class="overlay">
+              <div class="overlay-infos">
+                <h5>Jenkins CICD Pipeline for Deploying an Application to EKS Cluster.</h5>
+                <h3>Jenkins CI/CD pipeline tailored for deploying applications to an Amazon Elastic Kubernetes Service (EKS) cluster. This initiative showcased my proficiency in automating software delivery processes, ensuring rapid and reliable deployments to Kubernetes-based infrastructure. Through meticulous configuration and integration of Jenkins with EKS, I contributed to enhancing the project's efficiency and scalability, underscoring my expertise in DevOps and Kubernetes orchestration.</h3>
+              </div>  
+              <a href="https://github.com/souravsasmal01/Jenkins_CICD_Pipeline_for_Deploying_an_Application_to_EKS_Cluster" target="_blank" class="button">
+                <button type="button" class="button--view">View
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- <div class="img-wrapper">
+            <div class="text-top">
+              <p>2023</p>
+            </div>
+            <img src="Assets/img/Project.jpg" alt="">
+            <div class="text-bottom">
+              <h5>Deploying a Java Web Application into Kubernetes Cluster using Ansible.</h5>
+            </div>
+            <div class="overlay">
+              <div class="overlay-infos">
+                <h5>Spring Boot based Java web application using Maven, SonarQube, Argo CD and Kubernetes</h5>
+                <h3>Monitor voter turnout, run targetted campaigns in specific areas and estimate capital.</h3>
+              </div>  
+              <a href="#contacts" class="button">
+                <button type="button" class="button--view">View
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </button>
+              </a>                            
+            </div> -->
+          </div>                  
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <!-- Blog -->
+  <section id="blogs" class="blog-mf sect-pt4 route">
+      <div class="section-title">
+        <h2>Blogs</h2>
+        <span data-aos="zoom-in">
+          Explore the world of technology through my insightful and informative articles
+        </span>
+      </div>
+    <div class="Contain">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="https://souravsasmal01.hashnode.dev/deploying-a-java-web-application-into-kubernetes-cluster-using-ansible" target="_blank"><img src="Assets/img/Blog/blog1.png" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                This project will deploy a Java web application to Kubernetes using Ansible. The project will use the following tools.
+              </p>
+              <h3 class="card-title"><a href="https://souravsasmal01.hashnode.dev/deploying-a-java-web-application-into-kubernetes-cluster-using-ansible" target="_blank">Learn more</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" >
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="https://souravsasmal01.hashnode.dev/configuring-nginx-as-reverse-proxy-for-jenkins" target="_blank"><img src="Assets/img/Blog/blog2.png" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                A reverse proxy is a server that sits between clients and servers. It receives requests from clients and forwards them to the appropriate server.
+              </p>
+              <h3 class="card-title"><a href="https://souravsasmal01.hashnode.dev/configuring-nginx-as-reverse-proxy-for-jenkins" target="_blank">Learn more</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html" target="_blank"><img src="Assets/img/Blog/blog1.png" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                A reverse proxy is a server that sits between clients and servers. It receives requests from clients and forwards them to the appropriate server.
+              </p>
+              <h3 class="card-title"><a href="blog-single.html" target="_blank">Learn more</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me -->
+  <section class="contacts section" id="contacts">
+    <div class="section-title" >
+      <h2>Contact Me</h2>
+      <span>Want to connect? My inbox is always open!</span>
+    </div>
+    <div class="contact_container Container grid">
+      <div>
+        <a href="mailto:souravsasmal1409@gmail.com" target="_blank">
+          <div class="contact_info">
+            <i class="uil uil-envelope-alt contact_icon"></i>
+            <div>
+              <h3 class="contact_title">Email</h3>
+              <span class="contact_subtitle">souravsasmal1409@gmail.com</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://calendly.com/souravsasmal1409/zoom-meeting" target="_blank">
+          <div class="contact_info">
+            <i class="uil uil-calendar-alt contact_icon"></i>
+            <div>
+              <h3 class="contact_title">Online Meet</h3>
+              <span class="contact_subtitle">Schedule an Online Meet</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/souravsasmal01/" target="_blank">
+          <div class="contact_info">
+            <i class="uil uil-linkedin-alt contact_icon"></i>
+            <div>
+              <h3 class="contact_title">linkedin</h3>
+              <span class="contact_subtitle">@souravsasmal01</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.google.com/maps/place/Newtown,+Kolkata,+West+Bengal/@22.5862299,88.4516011,13z/data=!3m1!4b1!4m6!3m5!1s0x3a0275350398a5b9:0x75e165b244323425!8m2!3d22.5753931!4d88.4797903!16zL20vMGMwNmhz?entry=ttu" target="_blank">
+          <div class="contact_info">
+            <i class="uil uil-location-point contact_icon"></i>
+            <div>
+              <h3 class="contact_title">Location</h3>
+              <span class="contact_subtitle">Kolkata, India</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <form action="https://formspree.io/f/mzblggka" class="contact_form grid" id="contact-form" method="POST">
+        <div id="alert" class="alert_style"></div>
+        <div class="contact_inputs grid">
+          <div class="contact_content">
+            <input type="text" name="name" placeholder="Name" class="contact_input" id="name" required>
+          </div>
+          <div class="contact_content">
+            <input type="email" name="email" placeholder="Email" class="contact_input" id="email" required>
+          </div>
+        </div>
+        <div class="contact_content">
+          <input type="text" name="subject" placeholder="Subject" class="contact_input" id="subject" required>
+        </div>
+        <div class="contact_content">
+          <textarea name="message" id="" cols="0" rows="7" placeholder="Message" class="contact_input message" id="message"
+            style="resize: vertical;" required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="button button-flex">
+            Send Message
+            <i class="uil uil-message button_icon"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Sourav Sasmal</h3>
+            <p>
+              Newtown, Biswa Bangla Gate <br>
+              West Bengal, Kolkata  700156<br>
+              India <br><br>
+              <strong>Phone:</strong> +91 98832 32292<br>
+              <strong>Email:</strong> souravsasmal1409@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Cloud Development</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Photographer</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <div class="social-links mt-3">
+              <a href="https://www.linkedin.com/in/souravsasmal01/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/souravsasmal01" target="_blank" class="facebook"><i class="bx bxl-github"></i></a>
+              <a href="https://www.instagram.com/souravsasmal01/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <!-- <a href="https://sasmalsourav.github.io/career/" target="_blank" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+            </div>
+          </div>
+          <div class="container footer-bottom clearfix">
+            <div class="copyright">
+              &copy; Copyright <strong><span>Sourav Sasmal</span></strong>. All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll up back-to-top -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- JS -->
+  <script src="Assets/js/aos/aos.js"></script>
+  <script src="Assets/js/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="Assets/js/glightbox/js/glightbox.min.js"></script>
+  <script src="Assets/js/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="Assets/js/swiper/swiper-bundle.min.js"></script>
+  <script src="Assets/js/waypoints/noframework.waypoints.js"></script>
+
+  <!--  Main JS -->
+  <script src="Assets/js/main.js"></script>
+  <script src="Assets/js/background.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Download CV -->
+  <script>
+        function openCV() {
+        // Replace 'path_to_cv' with the actual path or URL of your CV file
+        var cvUrl = 'Assets/Resume/Sourav Sasmal.pdf';
+        var link = document.createElement('a');
+        link.href = cvUrl;
+        link.target = '_blank'; // Open in a new tab/window
+        link.click();
+        }
+  </script>  
+
+</body>
+</html>
